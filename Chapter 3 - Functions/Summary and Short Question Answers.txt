@@ -1,0 +1,77 @@
+Summary
+Functions are the primary way to compartmentalize your code into logical groups.
+Since the variables in functions exist in their own local scopes,
+code in one function cannot directly affect the values of variables in other functions.
+This limits what code could be changing the values of your variables,
+which can be helpful when it comes to debugging your code.
+
+Functions are a great tool to help you organize your code.
+You can think of them as black boxes: they have inputs in the form of parameters and outputs
+in the form of return values, and the code in them doesn’t affect variables in other functions.
+
+In previous chapters, a single error could cause your programs to crash.
+In this chapter, you learned about try and except statements,
+which can run code when an error has been detected. This can make your programs more
+resilient to common error cases.
+
+
+Practice Questions
+
+1. Why are functions advantageous to have in your programs?
+In a case where a program has a repeated action, it's better to call a function with that specific code in mind.
+Saves a lot of time to create a fucntion that serves one purpose.
+
+2. When does the code in a function execute: when the function is defined or when the function is called?
+defined -> def call(x):
+
+call(x)
+
+3. What statement creates a function?
+def
+
+4. What is the difference between a function and a function call?
+function is the block of code that serves a certain purpose,
+function call is when you actually use function's code for the purpose it was created for.
+
+5. How many global scopes are there in a Python program? How many local scopes?
+1 Global
+X functions = X Local scopes
+
+6. What happens to variables in a local scope when the function call returns?
+In short, the reset to original value.
+
+Long: Variable value is lost, When the local variables are destroyed,
+any values they held may be lost. If you need to preserve the values of certain variables after a function call,
+you should pass them as arguments to the function or return them from the function.
+
+7. What is a return value? Can a return value be part of an expression?
+It is what is returned after a function goes through all its line of codes.
+Yes it can.
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+None
+
+9. How can you force a variable in a function to refer to the global variable?
+Call it from witihn a function
+
+10. What is the data type of None?
+Null / NoneType
+
+11. What does the import areallyourpetsnamederic statement do?
+brings modules from the libraries into your own programming code
+
+12. If you had a function named bacon() in a module named spam, how would you call it after importing spam?
+import spam
+spam.bacon()
+
+13. How can you prevent a program from crashing when it gets an error?
+try/except - block
+
+14. What goes in the try clause? What goes in the except clause?
+Try - Clause
+This is where you place the code that you want to monitor for exceptions.
+If any exception occurs within this block, the program will stop executing the code in the try block,
+and it will immediately jump to the corresponding except block
+
+Except - Clause
+Specify how to handle the exception that was raised in the try block.
