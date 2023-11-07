@@ -1,0 +1,16 @@
+Summary
+Lists are useful data types since they allow you to write code that works on a modifiable number of values in a single
+variable. Later in this book, you will see programs using lists to do things that would be difficult or impossible to
+do without them.
+
+Lists are a sequence data type that is mutable, meaning that their contents can change.
+Tuples and strings, though also sequence data types, are immutable and cannot be changed.
+A variable that contains a tuple or string value can be overwritten with a new tuple or string value,
+but this is not the same thing as modifying the existing value in place—like, say, the append() or remove() methods do
+on lists.
+
+Variables do not store list values directly; they store references to lists. This is an important
+distinction when you are copying variables or passing lists as arguments in function calls.
+Because the value that is being copied is the list reference, be aware that any changes you
+make to the list might impact another variable in your program. You can use copy() or
+deepcopy() if you want to make changes to a list in one variable without modifying the original list.
